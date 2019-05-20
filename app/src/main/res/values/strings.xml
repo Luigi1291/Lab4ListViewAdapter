@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Lab4ListViewAdapter</string>
+    <string name="listViewHeader">ListView Example</string>
+    <string name="infoHeader">Información de Contacto</string>
+    <string name="Name">Nombre</string>
+    <string name="lastName">Apellido</string>
+    <string name="phoneNumber">Teléfono</string>
+    <string name="email">Correo</string>
+    <string name="btnSaveForm">GUARDAR</string>
+</resources>
