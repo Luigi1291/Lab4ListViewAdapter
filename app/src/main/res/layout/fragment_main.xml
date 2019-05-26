@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity"
     android:orientation="vertical"
     android:gravity="center|top"
@@ -13,7 +13,16 @@
         android:id="@+id/btnAdd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Agregar Persona"/>
+        android:text="Agregar Persona"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/listHeader"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
 
     <ListView
         android:id="@+id/listView"
@@ -28,5 +37,14 @@
         android:layout_width="fill_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:dividerHeight="1dp"/>
+        android:dividerHeight="3dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnAddDB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:src="@mipmap/ic_add_round"
+        android:backgroundTint="@color/ic_launcher_background"/>
 </LinearLayout>

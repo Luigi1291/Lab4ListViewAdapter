@@ -1,9 +1,17 @@
 package com.example.lab4listviewadapter.Models;
 
+import android.arch.persistence.room.Entity;
+import android.arch.persistence.room.PrimaryKey;
+import android.support.annotation.NonNull;
 import java.io.Serializable;
 
+@Entity(tableName = "personas")
 //Serializable permite enviar objetos entre fragmentos
 public class Persona implements Serializable {
+    //Entity Attributes
+    @PrimaryKey(autoGenerate = true)
+    @NonNull private int id;
+
     //Attributtes
     private String name;
     private String lastName;
@@ -50,5 +58,13 @@ public class Persona implements Serializable {
 
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }

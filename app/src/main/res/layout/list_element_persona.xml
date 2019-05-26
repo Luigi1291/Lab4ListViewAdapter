@@ -3,20 +3,45 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
-    android:gravity="center|top">
+    android:orientation="vertical"
+    android:padding="12dp">
 
-    <TextView
-        android:id="@+id/txtName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="NAME"
-        android:layout_marginRight="5dp"/>
+    <android.support.v7.widget.CardView
+        android:id="@+id/expressionCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/txtLastName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="LAST NAME"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NAME"
+                android:layout_alignParentLeft="true"
+                android:textSize="20dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EMAIL"
+                android:textSize="16dp"
+                android:layout_below="@+id/txtName"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/txtPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PHONE NUMBER"
+                android:textSize="16dp"
+                android:layout_below="@+id/txtEmail"
+                android:textAlignment="center"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
 </LinearLayout>

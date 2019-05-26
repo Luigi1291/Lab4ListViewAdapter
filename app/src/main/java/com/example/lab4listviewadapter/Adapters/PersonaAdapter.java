@@ -27,6 +27,8 @@ public class PersonaAdapter extends ArrayAdapter<Persona> {
         Persona persona = getItem(position);
         String name = persona.getName();
         String lastName = persona.getLastName();
+        String email = persona.getEmail();
+        String phoneNumber= persona.getPhoneNumber();
 
         if(view == null){
             LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -34,9 +36,12 @@ public class PersonaAdapter extends ArrayAdapter<Persona> {
         }
 
         TextView nameView = (TextView) view.findViewById(R.id.txtName);
-        TextView lastNameView = (TextView) view.findViewById(R.id.txtLastName);
-        nameView.setText(name);
-        lastNameView.setText(lastName);
+        TextView emailView = (TextView) view.findViewById(R.id.txtEmail);
+        TextView phoneNumberView = (TextView) view.findViewById(R.id.txtPhoneNumber);
+
+        nameView.setText(name+ " " + lastName);
+        emailView.setText(email);
+        phoneNumberView.setText(phoneNumber);
 
         return view;
     }

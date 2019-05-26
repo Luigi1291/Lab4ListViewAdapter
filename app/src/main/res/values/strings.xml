@@ -2,9 +2,12 @@
     <string name="app_name">Lab4ListViewAdapter</string>
     <string name="listViewHeader">ListView Example</string>
     <string name="infoHeader">Información de Contacto</string>
+    <string name="listHeader">Lista de Personas</string>
+    <string name="countMessage">Total de personas:</string>
     <string name="Name">Nombre</string>
     <string name="lastName">Apellido</string>
     <string name="phoneNumber">Teléfono</string>
     <string name="email">Correo</string>
     <string name="btnSaveForm">GUARDAR</string>
+    <string name="btnSaveFormBD">GUARDAR BD</string>
 </resources>
